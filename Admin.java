@@ -1,0 +1,42 @@
+import java.io.Serializable;
+
+public class Admin implements Serializable
+{
+
+    // becoming java beans, not useful in simple client application though
+    private static final long serialVersionUID = -5169442789450234938L;
+    private int adminId;
+    private String userName;
+    private String password;
+
+    public int getAdminId()
+    {
+        return adminId;
+    }
+
+    public void setAdminId(int adminId)
+    {
+        this.adminId = adminId;
+    }
+
+    public String getUserName()
+    {
+        return userName;
+    }
+
+    public void setUserName(String userName)
+    {
+        this.userName = userName;
+    }
+
+    public String getPassword()
+    {
+        return password;
+    }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
+
+}
